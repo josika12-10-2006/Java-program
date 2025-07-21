@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        float liters = sc.nextFloat();
+
+        float distance = sc.nextFloat();
+
+        if (liters <= 0 || distance <= 0) {
+
+            System.out.println("Invalid Input");
+
+            return;
+
+        }
+
+        float litersPer100km = (liters / distance) * 100;
+
+        float miles = distance * 0.6214f;
+
+        float gallons = liters * 0.2642f;
+
+        float mpg = miles / gallons;
+
+
+
+        System.out.println("Liters/100KM");
+
+        System.out.printf("%.2f\n", litersPer100km);
+
+        System.out.println("Miles/gallons");
+
+        System.out.printf("%.2f\n", mpg);
+
+    }
+
+}

@@ -12,9 +12,7 @@ public class Solution {
 
         int sum = 0;
 
-        // Calculate sum of digits
-
-        while (num > 0) {
+       while (num > 0) {
 
             sum += num % 10;
 
@@ -22,7 +20,7 @@ public class Solution {
 
         }
 
-        // Check Harshad condition
+
 
         if (original % sum == 0) {
 
